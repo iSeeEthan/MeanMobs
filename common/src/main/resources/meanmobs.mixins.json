@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.ethan.meanmobs.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [],
+  "mixins": [
+    "ChickenMixin",
+    "CowMixin",
+    "PigMixin",
+    "SheepMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

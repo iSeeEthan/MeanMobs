@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "meanmobs",
+  "version": "${version}",
+  "name": "Mean Mobs",
+  "description": "This mod enhances the Vanilla Mob behavior!",
+  "authors": [
+    "iSeeEthan"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/meanmobs/logo2.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ethan.meanmobs.fabric.MeanMobsFabric"
+    ],
+    "client": [
+      "com.ethan.meanmobs.fabric.client.MeanMobsFabricClient"
+    ],
+    "fabric-datagen": [
+      "com.ethan.meanmobs.fabric.MeanMobsFabricDatagen"
+    ]
+  },
+  "mixins": [
+    "meanmobs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": ">=1.21.1 <=1.21.11",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
